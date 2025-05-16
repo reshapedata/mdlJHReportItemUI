@@ -1,0 +1,17 @@
+Package: mdlJHReportItemUI
+Type: Package
+Title: UI Package For DMS mdlJHReportItem Module in R
+Version: 1.0.0
+Author: hulilei
+Maintainer: hulilei <hulilei@takewiki.com.cn>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Collate: 
+     'TestRecord.R'
+     'TemplateList.R'
+     'ProductQuality.R'
+     'CustomerMaterialCorrespondence.R'
