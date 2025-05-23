@@ -44,7 +44,12 @@ TestRecordUI_left <- function() {
   res <- tagList(
     tsui::uiTemplate(templateName = '检测记录模板'),
 
-    tsui::mdl_file(id ='text_flie_TestRecord' ,label ='上传检测记录' )
+    tsui::mdl_file(id ='text_flie_TestRecord' ,label ='上传检测记录' ),
+    shiny::actionButton(inputId = 'btn_TestRecord_Up',label = '上传检测记录'),
+
+    shiny::actionButton(inputId = 'btn_TestRecord_select',label = '查询'),
+
+    tsui::mdl_download_button(id = 'dl_TestRecord',label = '下载检测记录至EXCEL')
 
 
   )
@@ -64,11 +69,8 @@ TestRecordUI_right <- function() {
   res <- tagList(
 
 
-    shiny::actionButton(inputId = 'btn_TestRecord_Up',label = '上传检测记录'),
+    shinyWidgets::actionBttn(inputId = 'btn_coa_gen',label = '生成COA报告')
 
-    shiny::actionButton(inputId = 'btn_TestRecord_select',label = '查询'),
-
-    tsui::mdl_download_button(id = 'dl_TestRecord',label = '下载检测记录至EXCEL')
 
 
 
