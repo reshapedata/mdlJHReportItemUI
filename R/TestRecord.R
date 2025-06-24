@@ -69,7 +69,8 @@ TestRecordUI_right <- function() {
   res <- tagList(
 
 
-    shinyWidgets::actionBttn(inputId = 'btn_coa_gen',label = '生成COA报告')
+    shinyWidgets::actionBttn(inputId = 'btn_coa_gen',label = '生成COA报告'),
+    shinyWidgets::actionBttn(inputId = 'btn_RPAtask_select',label = '查询RPA任务')
 
 
 
