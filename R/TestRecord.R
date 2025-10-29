@@ -70,9 +70,20 @@ TestRecordUI_right <- function() {
 
 
     shinyWidgets::actionBttn(inputId = 'btn_coa_gen',label = '生成COA报告'),
-    shinyWidgets::actionBttn(inputId = 'btn_RPAtask_select',label = '查询RPA任务')
+    shinyWidgets::actionBttn(inputId = 'btn_RPAtask_select',label = '查询RPA任务'),
 
 
+    br(),
+
+    tsui::mdl_date(id ='text_date_TestRecord' ,label ='日期' ),
+
+
+    shiny::actionButton(inputId = 'btn_coa_genByDate',label = '按日期查询COA任务'),
+    tsui::mdl_download_button(id = 'dl_TestRecordByDate',label = '下载查询结果'),
+
+    #br(),
+    shiny::actionButton(inputId = 'btn_coa_genByMonth',label = '按月查询COA任务'),
+    tsui::mdl_download_button(id = 'dl_TestRecordByMonth',label = '下载查询结果')
 
 
   )
